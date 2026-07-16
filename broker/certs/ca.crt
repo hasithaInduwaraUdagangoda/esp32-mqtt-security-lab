@@ -1,0 +1,5 @@
+-----BEGIN CERTIFICATE-----
+# This is a placeholder. Generate the actual CA certificate using:
+# openssl genrsa -out ca.key 2048
+# openssl req -new -x509 -days 3650 -key ca.key -out ca.crt -subj "/C=US/ST=State/L=City/O=Organization/CN=CA"
+-----END CERTIFICATE-----

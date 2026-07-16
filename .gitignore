@@ -1,0 +1,86 @@
+# =========================
+# Security / Sensitive Files
+# =========================
+*.key
+*.pem
+*.srl
+*.csr
+passwd
+
+# Private certificates (DO NOT upload)
+mosquitto/certs/ca.key
+mosquitto/certs/server.key
+mosquitto/certs/client.key
+mosquitto/config/passwd
+
+# =========================
+# Docker
+# =========================
+mosquitto/data/
+mosquitto/log/
+
+# Docker temporary files
+*.pid
+*.sock
+
+# =========================
+# Arduino Build Files
+# =========================
+*.ino.cpp
+*.elf
+*.bin
+*.map
+build/
+dist/
+
+# Arduino IDE
+*.hex
+*.eep
+
+# =========================
+# ESP32 / Temporary Files
+# =========================
+*.tmp
+*.bak
+*.old
+
+# =========================
+# Wireshark Captures
+# =========================
+*.pcap
+*.pcapng
+*.cap
+
+# Optional large captures folder
+**/wireshark/captures/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Python Cache (if scripts added later)
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# Node (if docs site added later)
+# =========================
+node_modules/
+.next/

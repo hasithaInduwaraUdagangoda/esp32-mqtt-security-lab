@@ -1,0 +1,22 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: mosquitto-broker
+    restart: unless-stopped
+
+    ports:
+      - "1883:1883"   # Task 01 - MQTT (Unencrypted)
+      - "1884:1884"   # Task 02 - MQTT + Authentication
+      - "8883:8883"   # Task 03 - MQTT + TLS
+      - "8884:8884"   # Task 04 - MQTT + Mutual TLS
+      - "8885:8885"   # Task 05 - MQTT + TLS + Authentication
+      - "8886:8886"   # Task 06 - MQTT + TLS (No Authentication)
+
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+      - ./mosquitto/certs:/mosquitto/certs
+
+    stdin_open: true
+    tty: true

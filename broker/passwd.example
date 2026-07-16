@@ -1,0 +1,34 @@
+# =====================================================
+# MQTT Broker Example Credentials
+# =====================================================
+# This file is ONLY an example.
+# Actual passwd file is generated using mosquitto_passwd.
+#
+# Generate real password file:
+# docker run --rm -it -v "%cd%\mosquitto\config:/mosquitto/config" eclipse-mosquitto mosquitto_passwd -c /mosquitto/config/passwd hasitha
+#
+# Example Broker Configuration
+# --------------------------------
+# Broker IP      : 10.13.139.36
+# WiFi SSID      : Hasitha
+# WiFi Password  : 12345678
+#
+# MQTT Ports
+# --------------------------------
+# 1883 -> MQTT (No Security)
+# 1884 -> MQTT + Authentication
+# 8883 -> MQTT + TLS
+# 8884 -> MQTT + Mutual TLS
+# 8885 -> MQTT + TLS + Authentication
+# 8886 -> MQTT + TLS (No Authentication)
+#
+# Example Login
+# --------------------------------
+# Username : hasitha
+# Password : 12345
+#
+# Actual passwd file contains HASHED passwords, e.g.
+# hasitha:$7$101$Qf....hashed_password_here
+# =====================================================
+
+hasitha:<hashed_password_here>

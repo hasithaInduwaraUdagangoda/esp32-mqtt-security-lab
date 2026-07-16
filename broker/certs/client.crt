@@ -1,0 +1,4 @@
+-----BEGIN CERTIFICATE-----
+# This is a placeholder. Generate the actual client certificate using:
+# openssl x509 -req -in client.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out client.crt -days 3650 -sha256
+-----END CERTIFICATE-----
